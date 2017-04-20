@@ -30,7 +30,7 @@ def mask4(mask, data):
     data_bytes[1::4] = data_bytes[1::4].translate(b)
     data_bytes[2::4] = data_bytes[2::4].translate(c)
     data_bytes[3::4] = data_bytes[3::4].translate(d)
-    return bytes(data)
+    return bytes(data_bytes)
 
 
 def profile(mask_callable, max_time=0.5, max_iterations=1000):
